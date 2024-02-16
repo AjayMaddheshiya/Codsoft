@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome Landing Page</title>
+  
+    <style>
+        nav {
+            background-color: #333;
+            padding: 1em;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 1em;
+            font-size: 1.2em;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        body {
+            font-family: 'Montserrat', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #efcde5;
+            color: #333;
+        }
+
+        header {
+            background-color: #3498db;
+            color: #fff;
+            text-align: center;
+            padding: 2em 0;
+            position: relative;
+            background-image: url('https://www.transparenttextures.com/patterns/brick-wall.png');
+        }
+        
+        header img {
+            max-width: 100px;
+            height: auto;
+            position: absolute;
+            top: 50%;
+            left: 20px;
+            transform: translateY(-50%);
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 0.5em;
+        }
+
+        section {
+            display: flex;
+            justify-content: space-between;
+            max-width: 900px;
+            margin: 2em auto;
+            padding: 2em;
+            background-color: #89afd0;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            background-image: url('https://www.transparenttextures.com/patterns/geometry.png');
+        }
+
+        .column {
+            width: 48%;
+        }
+
+        h2 {
+            color: #3498db;
+            font-size: 1.5em;
+            margin-bottom: 0.5em;
+        }
+
+        p {
+            line-height: 1.6;
+            margin-bottom: 1.5em;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+            border-radius: 8px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #3498db;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 25px;
+            transition: background-color 0.3s ease;
+        }
+
+        .cta-button:hover {
+            background-color: #297fb8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5em 0;
+            background-color: #3498db;
+            color: #fff;
+        }
+
+        @media screen and (max-width: 768px) {
+            section {
+                flex-direction: column;
+            }
+
+            .column {
+                width: 100%;
+                margin-bottom: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Features</a>
+        <a href="#">Explore Us</a>
+        <a href="#">Contact</a>
+    </nav>
+    
+    <header>
+        <img src="https://cdn.sanity.io/images/tlr8oxjg/production/9f15109746df254c5a030a7ba9239f8a4bb5dadb-1456x816.png?w=3840&q=100&fit=clip&auto=format" alt="Logo">
+        <h1>Welcome to our Awesome Landing Page!</h1>
+    </header>
+
+    <section>
+        <div class="column">
+            <h2>About Us</h2>
+            <p>This is a Landing Page.</p>
+            <a href="#" class="cta-button">Learn More</a>
+        </div>
+
+        <div class="column">
+            <img src="https://cdn.sanity.io/images/tlr8oxjg/production/9f15109746df254c5a030a7ba9239f8a4bb5dadb-1456x816.png?w=3840&q=100&fit=clip&auto=format" alt="About Us Image">
+        </div>
+    </section>
+
+    <section>
+        <div class="column">
+            <h2>Features</h2>
+            <p>Features.</p>
+            <a href="#" class="cta-button">Explore Features</a>
+        </div>
+
+        <div class="column">
+            <img src="https://cdn.sanity.io/images/tlr8oxjg/production/9f15109746df254c5a030a7ba9239f8a4bb5dadb-1456x816.png?w=3840&q=100&fit=clip&auto=format" alt="Features Image">
+        </div>
+    </section>
+    <section>
+        <div class="column">
+            <h2>Our Legends</h2>
+            <a href="#" class="cta-button">More</a>
+
+        </div>
+        <div class="column">
+            <img src="https://cdn.sanity.io/images/tlr8oxjg/production/9f15109746df254c5a030a7ba9239f8a4bb5dadb-1456x816.png?w=3840&q=100&fit=clip&auto=format" alt="Legends">
+        </div>
+    </section>
+
+    <footer>
+        &copy; 2024 Awesome Company. All rights reserved.
+    </footer>
+</body>
+</html>
